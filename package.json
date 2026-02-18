@@ -14,7 +14,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:compile" : "sass sass/:src/main/resources/templates/css",
+    "sass:watch" : "sass --watch sass/:src/main/resources/templates/css"
   },
   "dependencies": {
     "sass": "^1.97.3"

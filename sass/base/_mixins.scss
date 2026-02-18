@@ -1,0 +1,49 @@
+@use "variables" as v;
+
+@mixin container{
+    width: min(120rem,100%);
+    margin: 0 auto;
+}
+
+@mixin button{
+    border-radius: .5rem;
+    border-style: solid;
+    border-width: .2rem;
+    transition: ease-in-out;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+// display
+@mixin grid_columns($n){
+    display: grid;
+    grid-template-columns: repeat(1fr, $n);
+    gap: 1rem;
+}
+
+@mixin grid_rows($n){
+    display: grid;
+    grid-template-rows: repeat(1fr, $n);
+    gap: 1rem;
+}
+
+// MEDIA QUERIES
+@mixin phone{
+    @media (min-width : v.$phone) {
+        @content;
+    }
+};
+@mixin tablet{
+    @media (min-width : v.$tablet) {
+        @content;
+    }
+};
+@mixin desktop{
+    @media (min-width : v.$desktop) {
+        @content;
+    }
+};
+@mixin desktopXl{
+    @media (min-width : v.$desktopXl) {
+        @content;
+    }
+};
