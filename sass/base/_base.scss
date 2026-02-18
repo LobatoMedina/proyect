@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -10,13 +11,14 @@ html {
 }
 
 body{
-    font-size: 62.5%;
-    font-family: v.$font;
-}
-p, a, span, input{
     font-size: 2rem;
+    font-family: v.$font;
+    background-color: v.$PrimaryColor;
+    color: v.$white;
 }
+
 a{
+    color: v.$white;
     text-decoration: none;
 }
 @for $i from 1 through 6{
