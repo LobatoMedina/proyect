@@ -1,0 +1,22 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Un proyecto con APIRestFul, spring y etc",
+  "keywords": [
+    "sass",
+    "spring-boot",
+    "spring-boot-JPA",
+    "mariadb",
+    "web"
+  ],
+  "license": "ISC",
+  "author": "Luis Eduardo Lobato Medina",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "sass": "^1.97.3"
+  }
+}
